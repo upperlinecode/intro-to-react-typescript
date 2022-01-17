@@ -1,0 +1,17 @@
+.Banner {
+  text-align: center;
+  background-color: darkslateblue;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+}
+
+.Banner h1 {
+  line-height: 0px;
+}
+
+.Banner h3 {
+  line-height: 10px;
+  margin-top: 10px;
+  font-weight: 100;
+}
