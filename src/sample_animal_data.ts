@@ -67,7 +67,7 @@ const animalData = [
       "http://pets-images.dev-apis.com/pets/dog39.jpg",
     ],
     majors: ["Linguistics"],
-    minors: [""],
+    minors: [],
     quote: "A long journey begins with a small step",
   },
   {
@@ -84,7 +84,7 @@ const animalData = [
       "http://pets-images.dev-apis.com/pets/dog36.jpg",
     ],
     majors: ["Education", "Math"],
-    minors: [""],
+    minors: [],
     quote: "Shoot for the moon and just might land among the stars.",
   },
   {
@@ -128,7 +128,7 @@ const animalData = [
     breed: "Shih Tzu",
     images: ["http://pets-images.dev-apis.com/pets/dog0.jpg"],
     majors: ["Music Production", "Journalism"],
-    minors: [""],
+    minors: [],
     quote:
       "Never forget to take time to rest - you've probably earned more than you think.",
   },
