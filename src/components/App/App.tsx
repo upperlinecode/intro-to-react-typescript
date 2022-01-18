@@ -6,23 +6,29 @@ import { fetchAnimals } from "./mock-api";
 import "./App.css";
 
 const App = () => {
+  const [animals, setAnimals] = useState([]);
+
   useEffect(() => {
     // OPTION 1: Async
-    setAnimals();
+    retrieveAnimals();
 
     // OPTION 2: .then()
-    // fetchAnimals().then((animals) => console.log(animals));
+    // fetchAnimals().then((animals) => setAnimals(animals));
   }, []);
 
-  const setAnimals = async () => {
+  const retrieveAnimals = async () => {
     const animals = await fetchAnimals();
-    console.log(animals);
+    setAnimals(animals);
   };
 
   return (
     <div className="App">
       <Banner />
-      <AnimalCard />
+      <div className="animalWrapper">
+        {animals.map((animal) => (
+          <AnimalCard key={animal.id} animalData={animal} />
+        ))}
+      </div>
     </div>
   );
 };
