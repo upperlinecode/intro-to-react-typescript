@@ -7,7 +7,10 @@ import "./App.css";
 
 const App = () => {
   useEffect(() => {
+    // OPTION 1: Async
     setAnimals();
+
+    // OPTION 2: .then()
     // fetchAnimals().then((animals) => console.log(animals));
   }, []);
 
