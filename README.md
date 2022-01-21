@@ -4,7 +4,19 @@
 
 ## Objectives
 
+- Add type annotations to variables.
+- Add state to a component with the `useState` hook.
+- Fetch data with the `useEffect` hook and the `fetch` API.
+- Resolve promises using either `.then()` or `async / await`.
+- Modify component state with custom functions.
+- Render multiple components by mapping over a JavaScript array.
+- Pass props that adhere to a TypeScript interface to a component.
+
 ## Why?
+
+If you ask 10 React developers what the best way to build a React application is, you'll likely get 11 different answers - There are so many libraries, packages, and build philosophies out there that it'd be a full-time job to master all of them.
+
+The purpose of this lab therefore isn't to show you the BEST way to write a React app, but rather to give you a chance to see some of the specific practices that are most common starting points when writing an app that uses React Hooks and TypeScript.
 
 ## Directions
 
