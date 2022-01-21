@@ -15,7 +15,7 @@ const AnimalCard = () => {
         <h5>Dog - Corgi - Poughkeepsie</h5>
         <p>Major: Molecular Biology</p>
         <p>Minor: Political Science</p>
-        <p>"Eat, Pray, Love" - Elizabeth Gilbert</p>
+        <p className="quote">"Eat, Pray, Love" - Elizabeth Gilbert</p>
         <div className="votes">
           <span>Current Votes: {voteCount}</span>
         </div>
