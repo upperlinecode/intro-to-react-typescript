@@ -9,7 +9,9 @@ const App = () => {
   return (
     <div className="App">
       <Banner />
-      <AnimalCard />
+      <div className="animalWrapper">
+        <AnimalCard />
+      </div>
     </div>
   );
 };
