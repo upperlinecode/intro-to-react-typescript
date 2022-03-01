@@ -14,7 +14,7 @@
 
 ## Why?
 
-If you ask 10 React developers what the best way to build a React application is, you'll likely get 11 different answers - There are so many libraries, packages, and build philosophies out there that it'd be a full-time job to master all of them.
+If you ask 10 React developers about the best way to build a React application, you'll likely get 11 different answers - There are so many libraries, packages, and build philosophies out there that it'd be a full-time job to master all of them.
 
 The purpose of this lab therefore isn't to show you the BEST way to write a React app, but rather to give you a chance to see some of the specific practices that are most common starting points when writing an app that uses React Hooks and TypeScript.
 
