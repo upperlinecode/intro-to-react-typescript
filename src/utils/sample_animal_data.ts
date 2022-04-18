@@ -1,4 +1,6 @@
-const animalData = [
+import { AnimalData } from "./types";
+
+const animalData: AnimalData[] = [
   {
     id: 1,
     name: "Luna",

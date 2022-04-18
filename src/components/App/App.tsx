@@ -2,8 +2,9 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Banner from "../Banner";
 import AnimalCard from "../AnimalCard";
-import { fetchAnimals } from "./mock-api";
+import { fetchAnimals } from "../../utils/mock-api";
 import "./App.css";
+import { AnimalData } from "../../utils/types";
 
 const App = () => {
   return (
