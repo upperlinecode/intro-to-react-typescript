@@ -6,6 +6,7 @@ import { fetchAnimals } from "../../utils/mock-api";
 import "./App.css";
 import { AnimalData } from "../../utils/types";
 
+
 const App = () => {
   return (
     <div className="App">
