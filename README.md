@@ -48,7 +48,7 @@ For now we're just building the front end - we'll worry about layering in some a
 
 ### 1. Add types to existing variables.
 
-Add `string` and `number` type annotations to the two existing variables in `AnimalCard.tsx`. Be sure that there are no remaining `any` types when you've finished this step.
+Add `string` and `number` type annotations to the two existing variables (`name` and `voteCount`) in `AnimalCard.tsx`. Be sure that there are no remaining `any` types when you've finished this step.
 
 ### 2. Add a `voteCount` state.
 
