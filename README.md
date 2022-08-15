@@ -48,11 +48,11 @@ For now we're just building the front end - we'll worry about layering in some a
 
 ### 1. Add types to existing variables.
 
-Add `string` and `number` type annotations to the two existing variables. Be sure that there are no remaining `any` types when you've finished this step.
+Add `string` and `number` type annotations to the two existing variables in `AnimalCard.tsx`. Be sure that there are no remaining `any` types when you've finished this step.
 
 ### 2. Add a `voteCount` state.
 
-Add in an instance of `useState` called `voteCount` to govern the state of the AnimalCard component. Use the tooltips to determine whether TypeScript has inferred the types correctly - be sure to add an explicit type if not.
+Add in an instance of `useState` called `voteCount` to govern the state of the `AnimalCard` component - this will replace the existing `voteCount` constant. Use the tooltips to determine whether TypeScript has inferred the types correctly - be sure to add an explicit type if not.
 
 Then wire up the button with the `setVoteCount` function returned by `useState` so that a click of the button increments that animal's vote count.
 
@@ -66,7 +66,11 @@ Add in a second instance of useState called `isFrozen` and reconfigure the `Anim
 
 ### 4. Add the Animals.
 
-Add a `useEffect()` to your `App.tsx`. Use the simulated API call `fetchAnimals()` and resolve the promise with the `.then()` or with an asynchronous function to access the array of animals - store those animals in a state variable.
+Add a `useEffect()` to your `App.tsx`. You have three options for how authentic you want your practice with an API to be with this lab:
+
+- Option 1 (Mild): Just import over
+- Option 2 (Medium): Use the simulated API call `fetchAnimals()` from the utils folder and resolve the promise with the `.then()` or with an `async / await` function to access the array of animals - store those animals in a state variable.
+- Option 3 (Authentic): Access the endpoint `https://api.jsonbin.io/v3/b/62fa38735c146d63ca6f76b7` to get the list of animals and resolve the promise with the `.then()` or with an `async / await` function to access the array of animals - store those animals in a state variable. You'll want to use lots of console.log statements to make sure you're understanding the shape of the data at each point along thw way.
 
 ### 5. Render a card per animal.
 
@@ -74,11 +78,11 @@ Map over the animals in the state variable to render out a card for each animal.
 
 ### 6. Add an interface for props.
 
-Create an interface for the props to be sent to an individual `AnimalCard`. You'll have to make some decisions about how narrowly to type each property in the interface.
+Create an interface for the props to be sent to an individual `AnimalCard`. You'll have to make some decisions about how narrowly to type each property in the interface. You may want to take advantage of the already-defined `AnimalData` interface defined in `types.ts`.
 
 ### 7. Pass in the props.
 
-Send props to each AnimalCard so that the animal's information is accessed correctly. You may need to add in some helper functions to make sure that the props conform to the interface you created in step 6.
+Send props to each AnimalCard so that the animal's information is accessed correctly. The API response data for this lab should be relatively clean, but you may need to add in some helper functions to make sure that the props conform to the interface you created or used in step 6.
 
 ### 8. Add any finishing touches.
 
