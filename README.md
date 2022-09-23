@@ -68,7 +68,7 @@ Add in a second instance of useState called `isFrozen` and reconfigure the `Anim
 
 Add a `useEffect()` to your `App.tsx`. You have three options for how authentic you want your practice with an API to be with this lab:
 
-- Option 1 (Mild): Just import over
+- Option 1 (Mild): Just import over the hardcoded and typed object from `src/utils/sample_animal_data_json.ts`.
 - Option 2 (Medium): Use the simulated API call `fetchAnimals()` from the utils folder and resolve the promise with the `.then()` or with an `async / await` function to access the array of animals - store those animals in a state variable.
 - Option 3 (Authentic): Access the endpoint `https://api.jsonbin.io/v3/b/62fa38735c146d63ca6f76b7` to get the list of animals and resolve the promise with the `.then()` or with an `async / await` function to access the array of animals - store those animals in a state variable. You'll want to use lots of console.log statements to make sure you're understanding the shape of the data at each point along thw way.
 
